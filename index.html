@@ -1,0 +1,92 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax + Navegación</title>
+  
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<body>
+
+  <!-- NAVBAR CON ANCLAS -->
+  <!--
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-nosotros">Sobre Nosotros</a>
+    <a href="#segunda">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  -->
+   <nav>
+    <button onclick="irA('inicio')">Inicio</button>
+    <button onclick="irA('sobre-nosotros')">Servicios</button>
+    <button onclick="window.location.href='galeria.html';" >Galeria</button>
+    <button onclick="irA('contacto')">Contacto</button>
+    <button onclick="window.location.href='juego.html';" >Premios</button>
+  </nav>
+
+  <!-- SECCIÓN 1: Parallax con imagen de montaña -->
+  <section class="parallax" id="inicio">
+    <div class="parallax-texto">
+      <h1>Bienvenidos</h1>
+      <p>Desplázate para descubrir el efecto parallax</p>
+      <p class="hint-teclado">
+        Presiona <span class="tecla">S</span> para ir a Sobre Nosotros
+        &nbsp;|&nbsp;
+        <span class="tecla">A</span> para ir a Contacto
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: Contenido normal -->
+  <section class="seccion-contenido" id="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      Esta es una sección de contenido normal, sin efecto parallax.
+      Sirve como contraste para que el efecto de las imágenes fijas se note más
+      al hacer scroll hacia arriba y hacia abajo.
+    </p>
+    <button class="boton-nav" onclick="irA('experiencias')">
+      Conoce nuestros clientes ↓
+    </button>
+  </section>
+
+<!-- SECCIÓN 2: Contenido normal -->
+<section class="seccion-contenido scroll" id="experiencias">
+    <h2>Nuestros clientes</h2>
+    <p>
+      Esta es una sección de contenido normal, sin efecto parallax.
+      Sirve como contraste para que el efecto de las imágenes fijas se note más
+      al hacer scroll hacia arriba y hacia abajo.
+    </p>
+    <button class="boton-nav" onclick="irA('segunda')">
+      Ver Galería ↓
+    </button>
+  </section>
+
+  <!-- SECCIÓN 3: Parallax con imagen de bosque -->
+  <section class="parallax" id="segunda">
+    <div class="parallax-texto">
+      <h1>Galería</h1>
+      <p>Una segunda imagen de fondo con el mismo efecto</p>
+      <button class="boton-nav" onclick="window.location.href='galeria.html';" >Galeria</button>
+    </div>
+    
+  </section>
+
+
+
+  <!-- SECCIÓN 4: Contenido normal -->
+  <section class="seccion-contenido" id="contacto">
+    <h2>Contacto</h2>
+    <p>
+      El scroll suave con <code>scrollIntoView</code> hace que la navegación
+      se sienta fluida y profesional en lugar de saltar bruscamente.
+    </p>
+    <button class="boton-nav" onclick="irA('inicio')">
+      Volver al inicio ↑
+    </button>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+</html>

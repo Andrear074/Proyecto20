@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* ── NAVBAR ── */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    z-index: 100;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #f0c040;
+  }
+
+/* Botón de navegación interno */
+  nav button {
+    padding: 12px 28px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  nav button:hover { background: #f0c040; color: #222; }
+
+
+  /* ── SECCIONES NORMALES ── */
+  .seccion-contenido {
+    padding: 80px 40px;
+    background: #f5f5f5;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .seccion-contenido h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .seccion-contenido p {
+    max-width: 600px;
+    color: #666;
+    line-height: 1.7;
+  }
+  .scroll {
+    background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600");
+    background-attachment: scroll; /* default: la imagen viaja con el elemento */
+  }
+
+  .boton-nav {
+    padding: 12px 28px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+
+  .boton-nav:hover {
+    background: #f0c040;
+    color: #333;
+  }
+
+  /* ── SECCIONES PARALLAX ── */
+  .parallax {
+    background-attachment: fixed;  /* ← la magia */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Cada sección tiene su propia imagen */
+  #inicio {
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600');
+  }
+
+  #segunda {
+    background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600');
+  }
+
+  /* Texto encima del parallax */
+  .parallax-texto {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .parallax-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .parallax-texto p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+
+  /* Hint de teclado */
+  .hint-teclado {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+
+  .tecla {
+    display: inline-block;
+    background: white;
+    color: #333;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-weight: bold;
+  }

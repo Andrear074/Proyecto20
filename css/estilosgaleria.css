@@ -1,0 +1,286 @@
+*, *::before, *::after {
+
+  box-sizing: border-box;   /* El padding no agranda los elementos */
+  margin: 0;                /* Eliminar márgenes por defecto del navegador */
+  padding: 0;
+}
+
+:root {
+  /* Paleta de colores del proyecto — cambiar aquí afecta toda la página */
+  --color-fondo:      #f5f0eb;   /* Beige cálido para el fondo */
+  --color-superficie: #fffcf8;   /* Blanco cálido para las cards */
+  --color-texto:      #1a1208;   /* Negro cálido para el texto */
+  --color-acento:     #c8522a;   /* Naranja tostado para precios y botones */
+  --color-inicio:     #be2dab;   /* Naranja tostado para precios y botones */
+  --color-borde:      #e0d8ce;   /* Beige para bordes sutiles */
+  --sombra:           0 4px 24px rgba(26, 18, 8, 0.08);
+  --radio-borde:      14px;       /* Redondez de esquinas */
+}
+
+/* ================================================
+
+   BODY Y TIPOGRAFÍA BASE
+
+================================================ */
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--color-fondo);
+  coLor: var(--color-texto);
+  min-height: 100vh;
+}
+
+/* ================================================
+
+   HEADER
+
+================================================ */
+
+header {
+  background-color: var(--color-texto);    /* Negro */
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* Nombre a la izq, carrito a la der */
+  position: sticky;                 /* Se queda arriba al hacer scroll */
+  top: 0;
+  z-index: 100;                     /* Por encima de otros elementos */
+}
+
+/* ================================================
+
+   BOTÓN DEL CARRITO (en el header)
+
+================================================ */
+#btn-Inicio {
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-inicio);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+
+}
+#btn-carrito {
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+
+}
+
+#btn-carrito:hover {
+  background-color: #a8401e;
+  transform: translateY(-1px);  /* Sube 1px al pasar el mouse */
+
+}
+
+/* El badge (numerito rojo con la cantidad) */
+
+#contador-badge {
+  background-color: white;
+  color: var(--color-acento);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ================================================
+
+   SECCIÓN PRINCIPAL
+
+================================================ */
+
+main {
+
+  padding: 48px 40px;
+  max-width: 1200px;
+  margin: 0 auto;   /* Centrar el contenido */
+
+}
+
+.seccion-titulo { margin-bottom: 36px; }
+.seccion-titulo h2 { font-size: 2rem; margin-bottom: 6px; }
+.seccion-titulo p  { color: #8a7d6b; }
+
+/* ================================================
+
+   GALERÍA — Grid de cards
+
+   auto-fill: crea tantas columnas como quepan
+
+   minmax(240px, 1fr): mínimo 240px, máximo todo el espacio
+
+================================================ */
+
+#galeria {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+/* ================================================
+
+   CARD DE PRODUCTO
+
+================================================ */
+
+.card {
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-borde);
+  overflow: hidden;           /* La imagen no se sale de las esquinas redondeadas */
+
+  box-shadow: var(--sombra);
+  border: 1px solid var(--color-borde);
+  display: flex;
+  flex-direction: column;     /* Imagen arriba, contenido abajo */
+  transition: transform 0.25s, box-shadow 0.25s;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(26, 18, 8, 0.13);
+}
+
+/* Imagen del producto */
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;    /* Recorta la imagen para que llene el espacio sin deformarse */
+  display: block;
+
+}
+
+/* Contenido de texto de la card */
+
+.card-body {
+  padding: 18px 20px;
+  flex: 1;              /* Ocupa el espacio restante para que los botones queden abajo */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
+.card-nombre      { font-weight: 600; font-size: 1rem; }
+
+.card-descripcion { font-size: 0.85rem; color: #8a7d6b; flex: 1; }
+
+.card-precio      { font-size: 1.25rem; font-weight: 700; color: var(--color-acento); }
+
+/* ================================================
+
+   BOTONES +/– Y "AGREGAR"
+
+================================================ */
+
+.card-acciones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px 18px;
+  border-top: 1px solid var(--color-borde);
+}
+
+/* Botones circulares de suma y resta */
+
+.btn-restar, .btn-sumar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid var(--color-borde);
+  background-color: var(--color-fondo);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btn-restar:hover { background-color: #fde4da; border-color: var(--color-acento); color: var(--color-acento); }
+
+.btn-sumar:hover  { background-color: #d7ede0; border-color: #4a7c59; color: #4a7c59; }
+
+/* Número que muestra la cantidad seleccionada */
+
+.cantidad-display {
+  font-size: 0.95rem;
+  font-weight: 700;
+  min-width: 28px;
+  text-align: center;
+}
+
+/* Botón "Agregar al carrito" */
+
+.btn-agregar {
+  margin-left: auto;    /* Empuja el botón hacia la derecha */
+  background-color: var(--color-texto);
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+}
+
+.btn-agregar:hover { background-color: var(--color-acento); }
+
+
+/* ================================================
+
+   OVERLAY: capa oscura detrás del carrito
+
+================================================ */
+
+#overlay {
+  display: none;             /* Oculto por defecto */
+  position: fixed;
+  inset: 0;                  /* Cubre toda la pantalla (top:0 right:0 bottom:0 left:0) */
+  background-color: rgba(26, 18, 8, 0.35);
+  z-index: 150;
+  backdrop-filter: blur(2px);
+}
+
+#overlay.activo { display: block; }  /* Visible cuando JS agrega la clase "activo" */
+
+/* ================================================
+
+   RESPONSIVE: ajustes para móvil
+
+================================================ */
+
+@media (max-width: 600px) {
+  main   { padding: 32px 16px; }
+  header { padding: 14px 16px; }
+  #panel-carrito { width: 100%; right: -100%; }
+}
