@@ -4,7 +4,7 @@ let productos = [
     nombre: "gloss gisou",          
     descripcion: "Aceite labial híbrido que combina hidratación profunda con un acabado brillante",
     precio: 32000,                          
-   imagen:"https://i.postimg.cc/Z986RVDL/Diseno-sin-titulo-(1).png",
+   imagen: "https://i.postimg.cc/4H7GYMLz/Diseno-sin-titulo-(1).png",
     enStock: true
   },
 
@@ -13,7 +13,7 @@ let productos = [
     nombre: "Corrector Tarte",
     descripcion: "Alta cobertura, acabado mate y larga duración",
     precio: 58000,
-    imagen: "https://i.postimg.cc/f3cYLBgK/Diseno-sin-titulo-(4).png",
+    imagen: "https://i.postimg.cc/pypRch2s/Diseno-sin-titulo-(4).png",
     enStock: true
   },
  
@@ -22,7 +22,7 @@ let productos = [
     nombre: "Tinta de Charlotte Tilbury",
     descripcion: "Base de maquillaje en barra de cobertura ligera a media",
     precio: 24000,
-    imagen: "https://i.postimg.cc/hJLVjp3M/Diseno-sin-titulo-(3).png",
+    imagen: "https://i.postimg.cc/G9Hdg8c7/Diseno-sin-titulo-(3).png",
     enStock: true
   },
   
@@ -31,7 +31,7 @@ let productos = [
     nombre: "Tinta Laneige",
     descripcion: "Híbrido entre tratamiento labial hidratante y brillo de alto impacto",
     precio: 19500,
-    imagen: "https://i.postimg.cc/XZf9JQDL/Diseno-sin-titulo-(2).png",
+    imagen: "https://i.postimg.cc/xqcnpJ0t/Diseno-sin-titulo-(2).png",
     enStock: true
   },
 
@@ -40,7 +40,7 @@ let productos = [
     nombre: "Centella",
     descripcion: "reparador, calmante y cicatrizante, ideal para pieles sensibles, irritadas o con acné.",
     precio: 15000,
-    imagen: "https://i.postimg.cc/ns4qz0wK/Diseno-sin-titulo.png",
+    imagen: "https://i.postimg.cc/xqcnpJ0Z/Diseno-sin-titulo.png",
     enStock: true
   },
 
@@ -49,7 +49,7 @@ let productos = [
     nombre: "Belah beauty",
     descripcion: "Extracción en frío. Ideal para cocinar y cuidado de piel.",
     precio: 27000,
-    imagen: "https://i.postimg.cc/68vBCSwJ/b82954c21fbb91e5191e27a1cb6524ec.jpg",
+    imagen: "https://i.postimg.cc/YjhMDGp8/b82954c21fbb91e5191e27a1cb6524ec.jpg",
     enStock: true
   },
    {
@@ -57,7 +57,7 @@ let productos = [
     nombre: "Rare beauty",
     descripcion: "Extracción en frío. Ideal para cocinar y cuidado de piel.",
     precio: 27000,
-    imagen: "https://i.postimg.cc/w1m9DPHY/11355e46f48a1f8d563ca9e52150116a.jpg",
+    imagen: "https://i.postimg.cc/jnwTD9gP/11355e46f48a1f8d563ca9e52150116a.jpg",
      enStock: true
   },
    {
@@ -65,7 +65,7 @@ let productos = [
     nombre: "Rhode",
     descripcion: "Extracción en frío. Ideal para cocinar y cuidado de piel.",
     precio: 27000,
-    imagen: "https://i.postimg.cc/67xtc06H/d46cfe66ef3305be8425808b447e5714.jpg",
+    imagen: "https://i.postimg.cc/XBGWrhH9/d46cfe66ef3305be8425808b447e5714.jpg",
      enStock: true
   },
    {
@@ -73,7 +73,7 @@ let productos = [
     nombre: "Dior gloss",
     descripcion: "Extracción en frío. Ideal para cocinar y cuidado de piel.",
     precio: 27000,
-    imagen: "https://i.postimg.cc/nXDnq5xS/e31d2bb94f1738520e57fbd5d53b77da.jpg",
+    imagen: "https://i.postimg.cc/D4JhSDjX/e31d2bb94f1738520e57fbd5d53b77da.jpg",
      enStock: true
   }
   ];
