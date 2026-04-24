@@ -12,7 +12,7 @@
   --color-texto:      #1a1208;   /* Negro cálido para el texto */
   --color-acento:     #c8522a;   /* Naranja tostado para precios y botones */
   --color-inicio:     #be2dab;   /* Naranja tostado para precios y botones */
-  --color-borde:      #e0d8ce;   /* Beige para bordes sutiles */
+  --color-borde:      #d79dee;   /* Beige para bordes sutiles */
   --sombra:           0 4px 24px rgba(26, 18, 8, 0.08);
   --radio-borde:      14px;       /* Redondez de esquinas */
 }
@@ -38,7 +38,7 @@ body {
 
 header {
   background-color: var(--color-texto);    /* Negro */
-  color: white;
+  color: rgb(247, 241, 241);
   padding: 18px 40px;
   display: flex;
   align-items: center;
@@ -87,7 +87,7 @@ header {
 }
 
 #btn-carrito:hover {
-  background-color: #a8401e;
+  background-color: #d79dee;
   transform: translateY(-1px);  /* Sube 1px al pasar el mouse */
 
 }
@@ -123,7 +123,7 @@ main {
 
 .seccion-titulo { margin-bottom: 36px; }
 .seccion-titulo h2 { font-size: 2rem; margin-bottom: 6px; }
-.seccion-titulo p  { color: #8a7d6b; }
+.seccion-titulo p  { color: #000000; }
 
 /* ================================================
 

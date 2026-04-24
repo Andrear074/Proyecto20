@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(233, 210, 210, 0.9);
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -22,14 +22,14 @@
   }
 
   nav a {
-    color: white;
+    color: rgb(247, 188, 188);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
     transition: color 0.3s;
   }
 
   nav a:hover {
-    color: #f0c040;
+    color: #d79dee;
   }
 
 /* Botón de navegación interno */
@@ -41,7 +41,7 @@
     border-radius: 6px;
     font-size: 1rem;
   }
-  nav button:hover { background: #f0c040; color: #222; }
+  nav button:hover { background: #d79dee; color: #f0eaea; }
 
 
   /* ── SECCIONES NORMALES ── */
@@ -59,16 +59,16 @@
 
   .seccion-contenido h2 {
     font-size: 2rem;
-    color: #333;
+    color: #d79dee;
   }
 
   .seccion-contenido p {
     max-width: 600px;
-    color: #666;
+    color: #000000;
     line-height: 1.7;
   }
   .scroll {
-    background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600");
+    background-image: url("https://i.postimg.cc/66SszcyX/c9bf8ee5ae0b42209f09db6f4c7a4a4d.jpg");
     background-attachment: scroll; /* default: la imagen viaja con el elemento */
   }
 
@@ -84,7 +84,7 @@
   }
 
   .boton-nav:hover {
-    background: #f0c040;
+    background: #facbc2;
     color: #333;
   }
 
@@ -97,48 +97,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('https://i.postimg.cc/y8vfdYqL/ad908d31d0c9f5719cf2562406ab0708.jpg');
+  
   }
 
   /* Cada sección tiene su propia imagen */
   #inicio {
-    background-image: url('https://i.postimg.cc/LsQHF3Wm/primera.png');
+    background-image: url('https://i.postimg.cc/y8vfdYqL/ad908d31d0c9f5719cf2562406ab0708.jpg');
   }
 
   #segunda {
-    background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600');
-  }
-
-  /* Texto encima del parallax */
-  .parallax-texto {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 40px 60px;
-    border-radius: 12px;
-    text-align: center;
-  }
-
-  .parallax-texto h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-
-  .parallax-texto p {
-    font-size: 1.2rem;
-    opacity: 0.8;
-  }
-
-  /* Hint de teclado */
-  .hint-teclado {
-    margin-top: 20px;
-    font-size: 0.85rem;
-    opacity: 0.7;
-  }
-
-  .tecla {
-    display: inline-block;
-    background: white;
-    color: #333;
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-weight: bold;
+    background-image: url('https://i.postimg.cc/BbfTQRmK/e655f5cf1a374675416b8f5971ff71ff.jpg');
   }
